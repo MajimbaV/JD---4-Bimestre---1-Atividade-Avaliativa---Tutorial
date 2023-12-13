@@ -1,5 +1,5 @@
-from equipamentos.Armaduras.armadura import *
-from equipamentos.Armamentos.arma import *
+from Equipamentos.Armaduras.armadura import *
+from Equipamentos.Armamentos.arma import *
 import math
 from config import *
 
@@ -21,16 +21,16 @@ pygame.init()
 vet = pygame.math.Vector2
 
 animation_walkin_right = [
-    pygame.image.load("assets/MCNEW/Sprite_Walkin_r/sprite_walkin_r_1.png"),
-	pygame.image.load("assets/MCNEW/Sprite_Walkin_r/sprite_walkin_r_2.png"),
+    pygame.image.load("assets/Player/Sprite_Walkin_r/sprite_walkin_r_1.png"),
+	pygame.image.load("assets/Player/Sprite_Walkin_r/sprite_walkin_r_2.png"),
 ]
 
 for index, sprite in enumerate(animation_walkin_right):
     animation_walkin_right[index] = pygame.transform.scale(sprite, (32, 32))
     
 animation_walkin_left = [
-    pygame.image.load("assets/MCNEW/Sprite_Walkin_L/sprite_walkin_l_1.png"),
-	pygame.image.load("assets/MCNEW/Sprite_Walkin_L/sprite_walkin_l_2.png"),
+    pygame.image.load("assets/Player/Sprite_Walkin_L/sprite_walkin_l_1.png"),
+	pygame.image.load("assets/Player/Sprite_Walkin_L/sprite_walkin_l_2.png"),
 
 ]
 
@@ -38,8 +38,8 @@ for index, sprite in enumerate(animation_walkin_left):
     animation_walkin_left[index] = pygame.transform.scale(sprite, (32, 32))  
 
 animation_walkin_down = [
-    pygame.image.load("assets/MCNEW/Sprite_Walkin_D/sprite_walkin_d_1.png"),
-	pygame.image.load("assets/MCNEW/Sprite_Walkin_D/sprite_walkin_d_2.png"),
+    pygame.image.load("assets/Player/Sprite_Walkin_D/sprite_walkin_d_1.png"),
+	pygame.image.load("assets/Player/Sprite_Walkin_D/sprite_walkin_d_2.png"),
 
 ]
 
@@ -48,8 +48,8 @@ for index, sprite in enumerate(animation_walkin_down):
     
     
 animation_walkin_up = [
-    pygame.image.load("assets/MCNEW/Sprite_Walkin_U/sprite_walkin_u_1.png"),
-	pygame.image.load("assets/MCNEW/Sprite_Walkin_U/sprite_walkin_u_2.png"),
+    pygame.image.load("assets/Player/Sprite_Walkin_U/sprite_walkin_u_1.png"),
+	pygame.image.load("assets/Player/Sprite_Walkin_U/sprite_walkin_u_2.png"),
 
 ]
 
