@@ -21,8 +21,8 @@ pygame.init()
 vet = pygame.math.Vector2
 
 animation_walkin_right = [
-    pygame.image.load("assets/Player/Sprite_Walkin_r/sprite_walkin_r_1.png"),
-	pygame.image.load("assets/Player/Sprite_Walkin_r/sprite_walkin_r_2.png"),
+    pygame.image.load("assets/Player/Sprite_Walkin_R/sprite_walkin_r_1.png"),
+	pygame.image.load("assets/Player/Sprite_Walkin_R/sprite_walkin_r_2.png"),
 ]
 
 for index, sprite in enumerate(animation_walkin_right):
@@ -119,7 +119,7 @@ class Player(pygame.sprite.Sprite):
   
 		#Sprite
 
-		self.image = pygame.image.load("assets/MCNEW/Sprite_Walkin_D/sprite_walkin_d_1.png")
+		self.image = pygame.image.load("assets/Player/Sprite_Walkin_D/sprite_walkin_d_1.png")
 		self.image = pygame.transform.scale(self.image, (32, 32))
   
 		self.rect = self.image.get_rect(center = (x, y))
